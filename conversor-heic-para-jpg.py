@@ -1,3 +1,5 @@
+#importação das bibliotecas necessárias para 
+# a tarefa
 import glob
 from PIL import Image
 from pillow_heif import register_heif_opener
@@ -5,8 +7,10 @@ import os
 
 register_heif_opener()
 
-folder = r"C:\Users\david\Downloads\pai"
+#atribuir a variavel folder a url do diretorio onde estão as fotos
+folder = r"C:\Users\user\diretorio-das-fotos"
 
+# configurar o diretório das fotos como o diretório de trabalho
 os.chdir(folder)
 
 # searching .heic images in existing folder
